@@ -1,0 +1,15 @@
+@page "/login"
+@using Frontend.Services
+@inject AuthService Auth
+
+<h3>Login</h3>
+<input @bind="email" placeholder="Email" class="form-control mb-2" />
+<input @bind="password" type="password" placeholder="Password" class="form-control mb-2" />
+<button @onclick="HandleLogin" class="btn btn-success">Login</button>
+<p>@pesan</p>
+<a href="/register">Belum punya akun? Register</a>
+
+@code {
+    string email="", password="", pesan="";
+    async Task HandleLogin() => pesan = await Auth.Login(email, password);
+}

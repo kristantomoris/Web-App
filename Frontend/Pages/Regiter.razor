@@ -1,0 +1,21 @@
+@page "/register"
+@using Frontend.Services
+@inject AuthService Auth
+@inject NavigationManager Nav
+
+<h3>Register</h3>
+<input @bind="nama" placeholder="Nama" class="form-control mb-2" />
+<input @bind="email" placeholder="Email" class="form-control mb-2" />
+<input @bind="password" type="password" placeholder="Password" class="form-control mb-2" />
+<button @onclick="HandleRegister" class="btn btn-primary">Daftar</button>
+<p>@pesan</p>
+<a href="/login">Sudah punya akun? Login</a>
+
+@code {
+    string nama="", email="", password="", pesan="";
+    async Task HandleRegister()
+    {
+        pesan = await Auth.Register(nama, email, password);
+        if(pesan.Contains("Berhasil")) Nav.NavigateTo("/login");
+    }
+}
