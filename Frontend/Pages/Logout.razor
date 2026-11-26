@@ -1,0 +1,7 @@
+@page "/logout"
+@using Frontend.Services
+@inject AuthState State
+@inject NavigationManager Nav
+<p>Logging out...</p>
+@code { protected override void OnInitialized() { State.Logout(); Nav.NavigateTo("/login"); } }
+

@@ -1,0 +1,49 @@
+@page "/register"
+@using Frontend.Services
+@inject AuthService Auth
+@inject NavigationManager Nav
+
+<div class="d-flex justify-content-center align-items-center" style="min-height:80vh;">
+  <div class="card shadow p-4" style="width:100%; max-width:420px; border-radius:16px;">
+    <h3 class="text-center mb-1">Buat Akun Baru</h3>
+    <p class="text-center text-muted mb-4">Isi data di bawah untuk mendaftar</p>
+
+    <label class="form-label">Nama Lengkap</label>
+    <input @bind="nama" placeholder="Nama lengkap" class="form-control mb-3" />
+
+    <label class="form-label">Email</label>
+    <input @bind="email" type="email" placeholder="nama@email.com" class="form-control mb-3" />
+
+    <label class="form-label">Password</label>
+    <input @bind="password" type="password" placeholder="Minimal 6 karakter" class="form-control mb-2" />
+    <small class="text-muted">Password akan disimpan dalam bentuk hash, bukan teks asli.</small>
+
+    @if (!string.IsNullOrEmpty(pesan))
+    {
+        <div class="alert @(sukses ? "alert-success" : "alert-danger") py-2 mt-3">@pesan</div>
+    }
+
+    <button @onclick="HandleRegister" class="btn btn-primary w-100 py-2 mt-3" disabled="@loading">
+        @(loading ? "Memproses..." : "Daftar")
+    </button>
+
+    <p class="text-center mt-3 mb-0">Sudah punya akun? <a href="/login">Login di sini</a></p>
+  </div>
+</div>
+
+@code {
+    string nama = "", email = "", password = "", pesan = "";
+    bool sukses = false, loading = false;
+
+    async Task HandleRegister()
+    {
+        if (string.IsNullOrWhiteSpace(nama) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
+        { pesan = "Semua kolom wajib diisi."; sukses = false; return; }
+        if (password.Length < 6) { pesan = "Password minimal 6 karakter."; sukses = false; return; }
+        loading = true; pesan = "";
+        var hasil = await Auth.Register(nama, email, password);
+        loading = false;
+        if (hasil.Contains("Berhasil")) { sukses = true; pesan = "Register berhasil! Silakan login."; await Task.Delay(800); Nav.NavigateTo("/login"); }
+        else { sukses = false; pesan = hasil; }
+    }
+}

@@ -18,53 +18,65 @@ build_property.EntryPointFilePath =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Frontend
 build_property.RootNamespace = Frontend
-build_property.ProjectDir = C:\xampp\htdocs\Web App\Frontend\
+build_property.ProjectDir = C:\xampp\htdocs\Web App\frontend\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 11.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\xampp\htdocs\Web App\Frontend
+build_property.MSBuildProjectDirectory = C:\xampp\htdocs\Web App\frontend
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 11.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/xampp/htdocs/Web App/Frontend/App.razor]
+[C:/xampp/htdocs/Web App/frontend/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/Web App/Frontend/Pages/Counter.razor]
+[C:/xampp/htdocs/Web App/frontend/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/Web App/Frontend/Pages/Home.razor]
+[C:/xampp/htdocs/Web App/frontend/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/Web App/Frontend/Pages/Login.razor]
+[C:/xampp/htdocs/Web App/frontend/Pages/Lock.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9jay5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/xampp/htdocs/Web App/frontend/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/Web App/Frontend/Pages/NotFound.razor]
+[C:/xampp/htdocs/Web App/frontend/Pages/Logout.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nb3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/xampp/htdocs/Web App/frontend/Pages/NotFound.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90Rm91bmQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/Web App/Frontend/Pages/Regiter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXRlci5yYXpvcg==
+[C:/xampp/htdocs/Web App/frontend/Pages/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/Web App/Frontend/Pages/Weather.razor]
+[C:/xampp/htdocs/Web App/frontend/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/Web App/Frontend/_Imports.razor]
+[C:/xampp/htdocs/Web App/frontend/Pages/Welcome.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VsY29tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/xampp/htdocs/Web App/frontend/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/Web App/Frontend/Layout/MainLayout.razor]
+[C:/xampp/htdocs/Web App/frontend/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-yxi2lmzgn0
 
-[C:/xampp/htdocs/Web App/Frontend/Layout/NavMenu.razor]
+[C:/xampp/htdocs/Web App/frontend/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-fpiqm1rjhp

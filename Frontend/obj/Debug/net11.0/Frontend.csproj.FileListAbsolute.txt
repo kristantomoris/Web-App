@@ -449,7 +449,6 @@ C:\xampp\htdocs\Web App\Frontend\obj\Debug\net11.0\blazor.build.boot-extension.j
 C:\xampp\htdocs\Web App\Frontend\obj\Debug\net11.0\wasm-bootjson-build.stamp
 C:\xampp\htdocs\Web App\Frontend\obj\Debug\net11.0\dotnet.js
 C:\xampp\htdocs\Web App\Frontend\obj\Debug\net11.0\wasm-bootjson-build.complete.stamp
-C:\xampp\htdocs\Web App\Frontend\obj\Debug\net11.0\staticwebassets\htmlassetplaceholders\build\s46cre4nju.html
 C:\xampp\htdocs\Web App\Frontend\obj\Debug\net11.0\compressed\w14xoety1c-{0}-wkzlyf0kf5-wkzlyf0kf5.gz
 C:\xampp\htdocs\Web App\Frontend\obj\Debug\net11.0\compressed\oa8gj1sotx-{0}-tchfgznwy8-tchfgznwy8.gz
 C:\xampp\htdocs\Web App\Frontend\obj\Debug\net11.0\compressed\yx0cy5zduu-{0}-6ctrpzgftu-6ctrpzgftu.gz
@@ -724,9 +723,10 @@ C:\xampp\htdocs\Web App\Frontend\obj\Debug\net11.0\Frontend.dll
 C:\xampp\htdocs\Web App\Frontend\obj\Debug\net11.0\refint\Frontend.dll
 C:\xampp\htdocs\Web App\Frontend\obj\Debug\net11.0\Frontend.pdb
 C:\xampp\htdocs\Web App\Frontend\obj\Debug\net11.0\ref\Frontend.dll
-C:\xampp\htdocs\Web App\Frontend\bin\Debug\net11.0\wwwroot\_framework\dotnet.4luufck9s4.js
-C:\xampp\htdocs\Web App\Frontend\bin\Debug\net11.0\wwwroot\_framework\dotnet.4luufck9s4.js.gz
-C:\xampp\htdocs\Web App\Frontend\obj\Debug\net11.0\compressed\qrv5vy98t0-{0}-o4nzwgz1rl-o4nzwgz1rl.gz
-C:\xampp\htdocs\Web App\Frontend\obj\Debug\net11.0\compressed\sk6s2r62yc-{0}-qjt5nq0gl6-qjt5nq0gl6.gz
-C:\xampp\htdocs\Web App\Frontend\obj\Debug\net11.0\compressed\2j3lvdba0r-{0}-4luufck9s4-4luufck9s4.gz
-C:\xampp\htdocs\Web App\Frontend\obj\Debug\net11.0\compressed\bj33lrgd70-{0}-q91kse9md6-q91kse9md6.gz
+C:\xampp\htdocs\Web App\frontend\obj\Debug\net11.0\staticwebassets\htmlassetplaceholders\build\ctsjhz2x7z.html
+C:\xampp\htdocs\Web App\frontend\bin\Debug\net11.0\wwwroot\_framework\dotnet.7yh9g1db9b.js
+C:\xampp\htdocs\Web App\frontend\bin\Debug\net11.0\wwwroot\_framework\dotnet.7yh9g1db9b.js.gz
+C:\xampp\htdocs\Web App\frontend\obj\Debug\net11.0\compressed\qrv5vy98t0-{0}-6gvgzybtn1-6gvgzybtn1.gz
+C:\xampp\htdocs\Web App\frontend\obj\Debug\net11.0\compressed\sk6s2r62yc-{0}-kb11852zac-kb11852zac.gz
+C:\xampp\htdocs\Web App\frontend\obj\Debug\net11.0\compressed\2j3lvdba0r-{0}-7yh9g1db9b-7yh9g1db9b.gz
+C:\xampp\htdocs\Web App\frontend\obj\Debug\net11.0\compressed\bj33lrgd70-{0}-4azp1qrkae-4azp1qrkae.gz

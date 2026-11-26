@@ -18,12 +18,7 @@ public class AuthController : ControllerBase
     {
         if (await _db.Users.AnyAsync(u => u.Email == dto.Email))
             return BadRequest(new { message = "Email sudah terdaftar" });
-        var user = new User
-        {
-            Nama = dto.Nama,
-            Email = dto.Email,
-            PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password)
-        };
+        var user = new User { Nama = dto.Nama, Email = dto.Email, PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password), CreatedAt = DateTime.Now };
         _db.Users.Add(user);
         await _db.SaveChangesAsync();
         return Ok(new { message = "Register berhasil" });

@@ -5,7 +5,7 @@ const e=()=>(async()=>{try{return new WebAssembly.Module(Uint8Array.from(atob("A
   "mainAssemblyName": "Frontend",
   "applicationEnvironment": "Development",
   "resources": {
-    "hash": "sha256-jvfOvtvMK0pCZyYeELDdLaN1i4zU72wrAUtlRLuG60U=",
+    "hash": "sha256-dlnJIMtZv3we6aNhzuG0p7Vx3UN/Kg48yO4AJ6hCZbY=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.gyn70opcq7.js"
@@ -1468,18 +1468,18 @@ const e=()=>(async()=>{try{return new WebAssembly.Module(Uint8Array.from(atob("A
         "cache": "force-cache"
       },
       {
-        "payloadSize": 26704,
+        "payloadSize": 38992,
         "virtualPath": "Frontend.wasm",
-        "name": "Frontend.o4nzwgz1rl.wasm",
-        "hash": "sha256-2C+0HWbZ+eA1C+mX6DGXxLRDbQSU72E27o6Z1ql3aU0=",
+        "name": "Frontend.6gvgzybtn1.wasm",
+        "hash": "sha256-Nr6klY08dbAvrwTKXbdK4xlVAVI7OjC5TlanF5ywipI=",
         "cache": "force-cache"
       }
     ],
     "pdb": [
       {
         "virtualPath": "Frontend.pdb",
-        "name": "Frontend.qjt5nq0gl6.pdb",
-        "hash": "sha256-1kO30crUITEhek9dyFPEAzMhzumvhVfntF35Bh0SPGE=",
+        "name": "Frontend.kb11852zac.pdb",
+        "hash": "sha256-8Ni9qsEmhMMAsVfUuT0tZKVACM6YB2iKIiTihRapgOg=",
         "cache": "force-cache"
       }
     ],

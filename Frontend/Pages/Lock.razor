@@ -1,0 +1,31 @@
+@page "/lock"
+@using Frontend.Services
+@inject AuthService Auth
+@inject AuthState State
+@inject NavigationManager Nav
+
+<div class="d-flex justify-content-center align-items-center" style="min-height:80vh;">
+  <div class="card shadow p-4 text-center" style="width:100%; max-width:420px; border-radius:16px;">
+    <div style="font-size:48px;">🔒</div>
+    <h3 class="mt-2">Layar Terkunci</h3>
+    <p class="text-muted">Halo, <b>@State.Nama</b><br/>@State.Email</p>
+    <p class="text-muted">Masukkan password untuk membuka kembali.</p>
+    <input @bind="password" type="password" placeholder="Password" class="form-control mb-3" />
+    @if (!string.IsNullOrEmpty(pesan)) { <div class="alert alert-danger py-2">@pesan</div> }
+    <button @onclick="HandleUnlock" class="btn btn-primary w-100 py-2">Buka Kunci</button>
+    <button @onclick="HandleLogout" class="btn btn-link mt-2">Ganti akun / Logout</button>
+  </div>
+</div>
+
+@code {
+    string password = "", pesan = "";
+    protected override void OnInitialized() { if (!State.IsLoggedIn) Nav.NavigateTo("/login"); }
+    async Task HandleUnlock()
+    {
+        if (string.IsNullOrWhiteSpace(password)) { pesan = "Password wajib diisi."; return; }
+        var result = await Auth.Login(State.Email, password);
+        if (result.Success) { State.Unlock(); Nav.NavigateTo("/welcome"); }
+        else pesan = "Password salah, coba lagi.";
+    }
+    void HandleLogout() { State.Logout(); Nav.NavigateTo("/login"); }
+}

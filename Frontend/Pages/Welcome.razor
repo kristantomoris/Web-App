@@ -1,0 +1,28 @@
+@page "/welcome"
+@using Frontend.Services
+@inject AuthState State
+@inject NavigationManager Nav
+
+<div class="d-flex justify-content-center align-items-center" style="min-height:80vh;">
+  <div class="card shadow p-4 text-center" style="width:100%; max-width:520px; border-radius:16px;">
+    <div style="font-size:48px;">👋</div>
+    <h2>Welcome, @State.Nama!</h2>
+    <p class="text-muted">Kamu berhasil login sebagai:</p>
+    <p><b>@State.Email</b></p>
+    <p class="text-success">Login berhasil! Ini adalah halaman utama aplikasi.</p>
+    <div class="d-grid gap-2 mt-4">
+      <button @onclick="KeLock" class="btn btn-warning">🔒 Lock Screen</button>
+      <button @onclick="KeLogout" class="btn btn-outline-danger">Logout</button>
+    </div>
+  </div>
+</div>
+
+@code {
+    protected override void OnInitialized()
+    {
+        if (!State.IsLoggedIn) Nav.NavigateTo("/login");
+        else if (State.IsLocked) Nav.NavigateTo("/lock");
+    }
+    void KeLock() { State.Lock(); Nav.NavigateTo("/lock"); }
+    void KeLogout() { State.Logout(); Nav.NavigateTo("/login"); }
+}
